@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=9" >
+
+<title>STATS EXTENSION REPORT</title>
+
+<link rel="stylesheet" type="text/css" href="extsyntax.css" />
+
+</head>
+
+<body>
+<h1>STATS EXTENSION REPORT</h1>
+
+<p>This procedure produces a report showing what extension commands
+are installed.  It searches all the locations where Statistics looks
+for extensions and produces a table showing names, locations, and
+other attributes.  It does not include custom dialogs that are not
+part of an extension.  The table can be filtered by patterns in the
+names of the extension commands.</p>
+<div class="syntax">
+<p>STATS EXTENSION REPORT<br/>
+FILTER = "pattern expression"
+<p>/HELP</p>
+
+<p><sup>&#42;</sup> Required<br/>
+<sup>&#42;&#42;</sup> Default</p>
+</div>
+<p>STATS EXTENSION REPORT/HELP displays this help and does nothing else.</p>
+
+
+<pre class="example"><code>
+STATS EXTENSION REPORT
+/FILTER = "^spssinc".
+</code></pre>
+
+<p>With no FILTER, all extensions are listed.  The locations searched
+for the report are those listed in the output from the SHOW EXTENSIONS
+command plus a variation to accommodate new style extensions such as 
+LINEAR LASSO.  Traditional extension bundles have file extension spe.
+New style bundles have file extension spxt.<p>
+<p>If the same extension has been saved in multiple locations, the one
+used will be from the first location where it is found.</p>
+<p>The searches are made for the bundle files, but the implementing code
+and syntax definition will usually be in the parent directory of the spe or spxt file.</p>
+
+<p>If <strong>FILTER</strong> is specificed, only files whose names match the filter
+are displayed.  The filter syntax is formally a regular expression.  You can search
+the web for explanations of this mechanism, which is used in many applications.  If you
+want to find all the extensions that contain GBM, for example, you could write</br>
+FILTER="GBM"</BR>
+To find only extensions that start with STATS, you could write</br>
+FILTER="^STATS"</br>
+The "^" character indictes that the pattern must match at the beginning of the name.
+
+<p>The pattern is applied only to the names not including the location text.</p>
+<p>Pattern specifications are not case sensitive</p>
+<p>Trailing blanks in the pattern specification are ignored.</p>
+
+<p>&copy; Copyright(C) Jon K. Peck, 2023</p>
+
+</body>
+
+</html>
+
