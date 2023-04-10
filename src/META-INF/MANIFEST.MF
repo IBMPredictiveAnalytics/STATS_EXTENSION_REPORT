@@ -1,10 +1,18 @@
 Name: STATS_EXTENSION_REPORT
-Display-Name: Report on Installed Extensions
 Dialog-Specs: dialog489.cfe
 Command-Specs: STATS_EXTENSION_REPORT.xml
 Code-Files: STATS_EXTENSION_REPORT.py
 Misc-Files: extsyntax.css,defaultdialogicon.png,LICENSE,markdown.html
 Summary: Produce a report listing information about installed extensio
  ns
-Version: 1.0.0
+Description: Generate a table listing installed extensions and propert
+ ies such as dependencies, version, location, display name if any, and
+  summary description
+Author: J K Peck
+Version: 1.0.1
 Product-Version: 27
+Date: 4/10/2023
+Categories: extensions
+Plugins: Python
+Python-Version: 3
+Translation-Catalogues: 
