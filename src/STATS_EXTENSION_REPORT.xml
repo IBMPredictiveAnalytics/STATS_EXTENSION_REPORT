@@ -2,6 +2,8 @@
 <Command xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="extension-1.0.xsd" Name="STATS EXTENSION REPORT" Language="Python" LanguageVersion="3">
 	<Subcommand Name="" IsArbitrary="False" Occurrence="Optional">
 		<Parameter Name="FILTER" ParameterType="QuotedString"/>
+		<Parameter Name="UPDATERPT" ParameterType="Keyword"/>
+		<Parameter Name="UNINSTALLEDRPT" ParameterType="Keyword"/>
 	</Subcommand>
 	<Subcommand Name="HELP" Occurrence="Optional"/>
 </Command>
