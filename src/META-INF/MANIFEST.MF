@@ -9,7 +9,7 @@ Description: Generate a table listing installed extensions and propert
  ies such as dependencies, version, location, display name if any, and
   summary description
 Author: J K Peck
-Version: 1.1.0
+Version: 1.1.1
 Product-Version: 27
 Date: 4/10/2023
 Categories: extensions
