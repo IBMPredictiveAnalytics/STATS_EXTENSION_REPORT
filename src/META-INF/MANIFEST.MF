@@ -1,5 +1,5 @@
 Name: STATS_EXTENSION_REPORT
-Display-name: Installed Extensions Report
+Display-Name: Installed Extensions Report
 Dialog-Specs: extensionreport.cfe
 Command-Specs: STATS_EXTENSION_REPORT.xml
 Code-Files: STATS_EXTENSION_REPORT.py
